@@ -1,0 +1,12 @@
+D:\My_GIT\BEAssignment\BE.Model\obj\Debug\net8.0\BE.Model.GeneratedMSBuildEditorConfig.editorconfig
+D:\My_GIT\BEAssignment\BE.Model\obj\Debug\net8.0\BE.Model.AssemblyInfoInputs.cache
+D:\My_GIT\BEAssignment\BE.Model\obj\Debug\net8.0\BE.Model.AssemblyInfo.cs
+D:\My_GIT\BEAssignment\BE.Model\obj\Debug\net8.0\BE.Model.csproj.CoreCompileInputs.cache
+D:\My_GIT\BEAssignment\BE.Model\obj\Debug\net8.0\BE.Model.sourcelink.json
+D:\My_GIT\BEAssignment\BE.Model\bin\Debug\net8.0\BE.Model.deps.json
+D:\My_GIT\BEAssignment\BE.Model\bin\Debug\net8.0\BE.Model.dll
+D:\My_GIT\BEAssignment\BE.Model\bin\Debug\net8.0\BE.Model.pdb
+D:\My_GIT\BEAssignment\BE.Model\obj\Debug\net8.0\BE.Model.dll
+D:\My_GIT\BEAssignment\BE.Model\obj\Debug\net8.0\refint\BE.Model.dll
+D:\My_GIT\BEAssignment\BE.Model\obj\Debug\net8.0\BE.Model.pdb
+D:\My_GIT\BEAssignment\BE.Model\obj\Debug\net8.0\ref\BE.Model.dll

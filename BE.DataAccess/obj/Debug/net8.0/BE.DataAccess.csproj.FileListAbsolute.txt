@@ -1,0 +1,16 @@
+D:\My_GIT\BEAssignment\BE.DataAccess\obj\Debug\net8.0\BE.DataAccess.csproj.AssemblyReference.cache
+D:\My_GIT\BEAssignment\BE.DataAccess\obj\Debug\net8.0\BE.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+D:\My_GIT\BEAssignment\BE.DataAccess\obj\Debug\net8.0\BE.DataAccess.AssemblyInfoInputs.cache
+D:\My_GIT\BEAssignment\BE.DataAccess\obj\Debug\net8.0\BE.DataAccess.AssemblyInfo.cs
+D:\My_GIT\BEAssignment\BE.DataAccess\obj\Debug\net8.0\BE.DataAccess.csproj.CoreCompileInputs.cache
+D:\My_GIT\BEAssignment\BE.DataAccess\obj\Debug\net8.0\BE.DataAccess.sourcelink.json
+D:\My_GIT\BEAssignment\BE.DataAccess\bin\Debug\net8.0\BE.DataAccess.deps.json
+D:\My_GIT\BEAssignment\BE.DataAccess\bin\Debug\net8.0\BE.DataAccess.dll
+D:\My_GIT\BEAssignment\BE.DataAccess\bin\Debug\net8.0\BE.DataAccess.pdb
+D:\My_GIT\BEAssignment\BE.DataAccess\bin\Debug\net8.0\BE.Model.dll
+D:\My_GIT\BEAssignment\BE.DataAccess\bin\Debug\net8.0\BE.Model.pdb
+D:\My_GIT\BEAssignment\BE.DataAccess\obj\Debug\net8.0\BE.DataAccess.csproj.CopyComplete
+D:\My_GIT\BEAssignment\BE.DataAccess\obj\Debug\net8.0\BE.DataAccess.dll
+D:\My_GIT\BEAssignment\BE.DataAccess\obj\Debug\net8.0\refint\BE.DataAccess.dll
+D:\My_GIT\BEAssignment\BE.DataAccess\obj\Debug\net8.0\BE.DataAccess.pdb
+D:\My_GIT\BEAssignment\BE.DataAccess\obj\Debug\net8.0\ref\BE.DataAccess.dll
