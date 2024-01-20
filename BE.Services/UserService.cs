@@ -7,9 +7,10 @@ namespace BE.Services
     public interface IUserService
     {
         Task<IEnumerable<User>> GetList();
-        Task<User> GetById(int id);
+        Task<User> GetById(long id);
+        Task<User> GetByName(string name);
         Task Create(UserCreateRequest model);
-        Task Update(int id, UserUpdateRequest model);
+        Task Update(long id, UserUpdateRequest model);
     }
 
     public class UserService : IUserService
@@ -30,9 +31,19 @@ namespace BE.Services
             return await _userRepository.GetList();
         }
 
-        public async Task<User> GetById(int id)
+        public async Task<User> GetById(long id)
         {
             var user = await _userRepository.GetById(id);
+
+            if (user == null)
+                throw new KeyNotFoundException("User not found");
+
+            return user;
+        }
+
+        public async Task<User> GetByName(string name)
+        {
+            var user = await _userRepository.GetByName(name);
 
             if (user == null)
                 throw new KeyNotFoundException("User not found");
@@ -49,7 +60,7 @@ namespace BE.Services
             await _userRepository.Add(user);
         }
 
-        public async Task Update(int id, UserUpdateRequest model)
+        public async Task Update(long id, UserUpdateRequest model)
         {
             var user = await _userRepository.GetById(id);
 

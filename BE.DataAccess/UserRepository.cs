@@ -7,8 +7,8 @@ namespace BE.DataAccess
     public interface IUserRepository
     {
         Task<IEnumerable<User>> GetList();
-        Task<User> GetByUsername(string name);
-        Task<User> GetById(int id);
+        Task<User> GetByName(string name);
+        Task<User> GetById(long id);
         Task Add(User user);
         Task Update(User user);
     }
@@ -26,13 +26,13 @@ namespace BE.DataAccess
             using var connection = _context.CreateConnection();
             return await connection.QueryAsync<User>("SELECT * FROM Users");
         }
-        public async Task<User> GetByUsername(string name)
+        public async Task<User> GetByName(string name)
         {
             using var connection = _context.CreateConnection();
-            return await connection.QueryFirstOrDefaultAsync<User>("SELECT * FROM Users WHERE Name = @name", new { Name = name });
+            return await connection.QueryFirstOrDefaultAsync<User>("SELECT COUNT(*) FROM Users WHERE Name LIKE '%' || @Name || '%'", new { Name = name });
         }
 
-        public async Task<User> GetById(int id)
+        public async Task<User> GetById(long id)
         {
             using var connection = _context.CreateConnection();
             return await connection.QuerySingleOrDefaultAsync<User>("SELECT * FROM Users WHERE Id = @Id", new { Id = id });

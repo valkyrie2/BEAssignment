@@ -33,7 +33,7 @@ var builder = WebApplication.CreateBuilder(args);
     services.AddAuthentication("Bearer").AddJwtBearer();
 
     services.AddControllers();
-    // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+
     services.AddEndpointsApiExplorer();
     services.AddSwaggerGen(c =>
     {
@@ -65,7 +65,7 @@ var app = builder.Build();
     {
         using var scope = app.Services.CreateScope();
         var context = scope.ServiceProvider.GetRequiredService<DataContext>();
-        await context.Init();
+        await context.InitAsync();
     }
     // Configure the HTTP request pipeline.
     if (app.Environment.IsDevelopment())

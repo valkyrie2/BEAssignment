@@ -5,6 +5,7 @@ VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "User-RESTful", "User-RESTful.csproj", "{7F75A304-C4CD-46DA-96F6-17AD9326A3A4}"
 	ProjectSection(ProjectDependencies) = postProject
+		{20031CC9-738C-43B9-A2BC-000B9A6A5CE6} = {20031CC9-738C-43B9-A2BC-000B9A6A5CE6}
 		{2FB32FF0-0FA2-4615-BF5F-23A52914A9B2} = {2FB32FF0-0FA2-4615-BF5F-23A52914A9B2}
 	EndProjectSection
 EndProject
@@ -15,7 +16,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BE.DataAccess", "..\BE.Data
 		{5FC28924-71BE-4EE0-B190-0EDD3EB01B19} = {5FC28924-71BE-4EE0-B190-0EDD3EB01B19}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BE.Services", "..\BE.Services\BE.Services.csproj", "{D9B7AF6B-E09F-4F11-8553-056ECD6D2E22}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BE.Services", "..\BE.Services\BE.Services.csproj", "{D9B7AF6B-E09F-4F11-8553-056ECD6D2E22}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BE.Tests", "..\BE.Tests\BE.Tests.csproj", "{20031CC9-738C-43B9-A2BC-000B9A6A5CE6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +42,10 @@ Global
 		{D9B7AF6B-E09F-4F11-8553-056ECD6D2E22}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D9B7AF6B-E09F-4F11-8553-056ECD6D2E22}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D9B7AF6B-E09F-4F11-8553-056ECD6D2E22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20031CC9-738C-43B9-A2BC-000B9A6A5CE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20031CC9-738C-43B9-A2BC-000B9A6A5CE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20031CC9-738C-43B9-A2BC-000B9A6A5CE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20031CC9-738C-43B9-A2BC-000B9A6A5CE6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
