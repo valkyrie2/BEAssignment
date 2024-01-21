@@ -41,7 +41,7 @@ namespace User_RESTful.Controllers
                 throw;
             }
         }
-        [HttpGet("/{id}")]
+        [HttpGet("{id}")]
         public async Task<User> UserById(long id)
         {
             try
@@ -56,7 +56,7 @@ namespace User_RESTful.Controllers
                 throw;
             }
         }
-        [HttpGet("/Name/{name}")]
+        [HttpGet("Name/{name}")]
         public async Task<User> UserByName(string name)
         {
             try
@@ -88,7 +88,7 @@ namespace User_RESTful.Controllers
             }
         }
 
-        [HttpPut("/{id}")]
+        [HttpPut("{id}")]
         public async Task<IActionResult> UpdateUser(long id, UserUpdateRequest model)
         {
             try
@@ -103,7 +103,7 @@ namespace User_RESTful.Controllers
                 throw;
             }
         }
-        [HttpDelete("/{id}")]
+        [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteUser(long id, UserUpdateRequest model)
         {
             try
