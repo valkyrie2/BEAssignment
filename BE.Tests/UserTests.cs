@@ -38,6 +38,16 @@ namespace BE.Tests
         }
 
         [Fact]
+        public async Task DeleteTest()
+        {
+            const string sql = "DELETE FROM Users WHERE Id=@Id";
+            var del = await _connection.ExecuteAsync(sql, new { Id = 2 });
+            var affected = await _connection.QueryAsync<User>("SELECT * FROM Users WHERE Id=@Id", new { Id = 2 });
+
+            Assert.Null(affected.FirstOrDefault());
+        }
+
+        [Fact]
         public async Task UserbyIdTest()
         {
             const string sql = "SELECT * FROM Users WHERE Id=@Id";

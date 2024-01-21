@@ -103,5 +103,20 @@ namespace User_RESTful.Controllers
                 throw;
             }
         }
+        [HttpDelete("/{id}")]
+        public async Task<IActionResult> DeleteUser(long id, UserUpdateRequest model)
+        {
+            try
+            {
+                await _userService.Update(id, model);
+                return Ok();
+            }
+            catch (Exception e)
+            {
+                _logger.LogError(e, "Error updating users");
+                Console.WriteLine(e);
+                throw;
+            }
+        }
     }
 }

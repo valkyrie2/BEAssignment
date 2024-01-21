@@ -11,6 +11,7 @@ namespace BE.DataAccess
         Task<User> GetById(long id);
         Task Add(User user);
         Task Update(User user);
+        Task Delete(long id);
     }
     public class UserRepository : IUserRepository
     {
@@ -58,6 +59,16 @@ namespace BE.DataAccess
                 WHERE Id = @Id
              """;
             await connection.ExecuteAsync(sql, user);
+        }
+
+        public async Task Delete(long id)
+        {
+            using var connection = _context.CreateConnection();
+            var sql = """
+                DELETE FROM Users 
+                WHERE Id = @Id
+            """;
+            await connection.ExecuteAsync(sql, new { Id = id });
         }
     }
 }

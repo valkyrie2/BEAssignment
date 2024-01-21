@@ -11,6 +11,7 @@ namespace BE.Services
         Task<User> GetByName(string name);
         Task Create(UserCreateRequest model);
         Task Update(long id, UserUpdateRequest model);
+        Task Delete(long id);
     }
 
     public class UserService : IUserService
@@ -72,6 +73,11 @@ namespace BE.Services
 
             // save user
             await _userRepository.Update(user);
+        }
+
+        public async Task Delete(long id)
+        {
+            await _userRepository.Delete(id);
         }
     }
 
