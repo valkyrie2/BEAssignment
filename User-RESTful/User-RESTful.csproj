@@ -9,6 +9,7 @@
     <UserSecretsId>956e0dc5-990c-4086-9d6f-38621bd7a325</UserSecretsId>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
     <DockerfileContext>.</DockerfileContext>
+    <DockerfileFile>..\Dockerfile</DockerfileFile>
   </PropertyGroup>
 
   <ItemGroup>

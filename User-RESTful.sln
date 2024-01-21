@@ -18,7 +18,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BE.DataAccess", "..\BE.Data
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BE.Services", "..\BE.Services\BE.Services.csproj", "{D9B7AF6B-E09F-4F11-8553-056ECD6D2E22}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BE.Tests", "..\BE.Tests\BE.Tests.csproj", "{20031CC9-738C-43B9-A2BC-000B9A6A5CE6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BE.Tests", "..\BE.Tests\BE.Tests.csproj", "{20031CC9-738C-43B9-A2BC-000B9A6A5CE6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
